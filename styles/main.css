@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("/images/showcaseBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showcase__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.showcase__header a {
+  text-decoration: none;
+  color: white;
+}
+
+.showcase__header .fa-airbnb {
+  font-size: 1.5rem;
+}
+
+.showcase__header .become__host {
+  margin: 20px;
+}
+
+.showcase__header .fa-globe {
+  margin: 20px;
+  font-size: 1rem;
+}
+
+.showcase__header .user {
+  margin: 20px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background-color: white;
+  color: #464646;
+}
+
+.search__type ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+.search__type ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.search__type ul li :hover {
+  color: rgba(0, 0, 0, 0.363);
+}
+
+.logo {
+  display: inline-block;
+  margin: 20px;
+}
+
+.search__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search__box .searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+}
+
+.search__box .searchbar .search__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.search__box .searchbar .search__input label {
+  margin-bottom: 5px;
+}
+
+.search__box .searchbar .search__input input {
+  border: none;
+  cursor: pointer;
+}
+
+.search__box .searchbar a {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff6e6e;
+  padding: 15px;
+  border-radius: 100%;
+}
+
+.showcase__slogan {
+  margin: 20px;
+  padding-right: 500px;
+  padding-top: 70px;
+}
+
+.showcase__slogan h1 {
+  color: white;
+  font-size: 7rem;
+}
+
+.showcase__slogan button {
+  border: none;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.showcase__slogan button :hover {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
