@@ -1,0 +1,65 @@
+.cities__lodge {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    height: 90vh;
+    width: auto;
+}
+
+.near__cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px 50px;
+     a{
+         color: black;
+     }
+
+
+
+}
+
+.city__info {
+    display: flex;
+
+     img {
+         width: 30%;
+         height: auto;
+         border-radius: 20px;
+     }
+    
+     .text__info {
+         display: flex;
+         flex-direction: column;
+         padding-left: 20px;
+         justify-content: center;
+     }
+}
+.lodge__type {
+    margin-top: 50px;
+
+}
+.accomodation__types {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 20px;
+
+    .accomodation {
+        display: flex;
+        flex-direction: column;
+
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        h4 {
+            padding-top: 10px;
+        }
+
+    }
+
+
+}

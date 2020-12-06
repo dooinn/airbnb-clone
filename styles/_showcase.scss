@@ -1,7 +1,9 @@
 .showcase {
+    margin: 0;
+    padding: 0 100px;
     display: flex;
     flex-direction: column;
-    background-image: url("/images/showcaseBg.jpg");
+    background-image: url("https://a0.muscache.com/im/pictures/9b4919ad-8b4d-4246-ab59-aaed7b1b9d37.jpg?im_w=1920");
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
@@ -11,8 +13,13 @@
 
 
 .showcase__header {
+    width: 100%;
+    padding: 20px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+   
 
     a{
         text-decoration: none;
@@ -20,93 +27,151 @@
 
     }
 
-    .fa-airbnb {
-        font-size: 1.5rem;
+
+    
+
+.user__language {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        margin: 0 20px;
     }
 
-    .become__host {
-        margin: 20px;
-        
+}
 
-        }
+}
 
-    .fa-globe {
-        margin: 20px;
-        font-size: 1rem;
+.user__menu {
+    display: flex;
+    flex-direction: column;
 
-    }
 
     .user {
-        margin: 20px;
-        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
         border-radius: 25px;
         background-color: white;
         color: rgb(70, 70, 70);
+        cursor: pointer;
+
+        .fa-bars {
+            margin-right: 5px;
+        }
         
+    }
+
+
+    .user__box {
+  
+        position: absolute;
+        width: 15%;
+        top: 90%;
+        right: 3%;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px 10px 10px 3px;
+        text-align: left;
+        line-height: 3;
+
+
+
+        a, li {
+
+            list-style: none;
+            color: black;
+            font-size: 0.8rem;
+  
+
+            
+        }
     }
 }
 
 .search__type {
     ul {
         display: flex;
-        margin: 20px;
+        padding-left: 100px;
+
         li {
             display: inline-block;
             margin-right: 20px;
 
-
-
             :hover {
                 color: rgba(0, 0, 0, 0.363);
-
             }
         }
     }
-
 }
-
 
 
 .logo {
-    display: inline-block;
-    margin: 20px;
-
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
+
+.become__host:hover {
+    color: rgba(0, 0, 0, 0.363);
+}
+
+.language__change:hover {
+    color: rgba(0, 0, 0, 0.363);
+}
 
 
 
 .search__box {
     display: flex;
     flex-direction: column;
+    width: 50%;
 
     .searchbar {
         display: flex;
+        justify-content: space-between;
         background-color: white;
-        padding: 15px 30px;
+        padding: 8px 20px 8px 50px;
         border-radius: 50px; 
+        align-items: center;
 
         .search__input {
             display: flex;
             flex-direction: column;
-            margin-left: 10px;
-            margin-right: 40px;
-
-
+            width: 50%;
+            margin-right: 10px;
+            border-right: 1px solid rgba(128, 128, 128, 0.384);
 
             label {
                 margin-bottom: 5px;
+                font-size: 0.7rem;
+                font-weight: bold;
             }
             input {
                 border: none;
+                width: 90%;
                 cursor: pointer;
             }
         }
 
+        .without__border {
+            border-right: none;
+            margin-right: 0;
+            input {
+                width: 50%;
+            }
+        }
+
+
         a {
             color: white;
             justify-content: center;
-            background-color: rgb(255, 110, 110);
+            background-color: #FF385C;
             padding: 15px;
             border-radius: 100%;
 
@@ -118,22 +183,27 @@
 
 
 .showcase__slogan {
-    margin: 20px;
-    padding-right: 500px;
-    padding-top: 70px;
+
+    width: 100%;
+    padding: 200px 0 0 0;
+    line-height: 0.8;
+
+
+
     h1{
         color: white;
         font-size: 7rem;
+        margin-bottom: 20px;
+
     }
     
-    button {
-        border: none;
-        padding: 20px;
-        border-radius: 20px;
-        cursor: pointer;
-        :hover {
-            background-color: black;
-        }
+    a {
+        display: inline-block;
+        color: black;
+        padding: 10px 10px;
+        background-color: white;
+        border-radius: 10px;
+
     }
 }
 
