@@ -13,9 +13,9 @@
 
 <body>
     <container>
-        <section class="showcase">
-            <header class="showcase__header">
-                <a href="#" class="logo"><i class="fab fa-airbnb"></i> mybnb</a>
+        <header>
+            <div class="top__header">
+                <a href="#home" class="logo"><i class="fab fa-airbnb"></i> mybnb</a>
                 <div class="search__type">
                     <ul>
                         <li><a href="#">Places to stay</a></li>
@@ -23,51 +23,58 @@
                         <li><a href="https://www.airbnb.co.uk/s/experiences/online">Online Experiences</a></li>
                     </ul>
                 </div>
+                <!--------참고 (Scorll Animation): https://codepen.io/sara13js/pen/ZPxZgW
+                https://codepen.io/useruser123321/pen/rNVveKw-->
                 <div class="user__language">
                     <a href="#" class="become__host">Become a host</a>
                     <a href="#" class="language__change"><i class="fas fa-globe"></i></a>
                     <div class="user__menu">
-                        <div class="user">
+                        <div class="user" onclick="openUser()">
                             <i class="fas fa-bars"></i>
                             <i class="fas fa-user-circle"></i>
                         </div>
-                        <!-----Control by JS
-                        <ul class="user__box">
-                            <li><a href="">Sign up</a></li>
-                            <li><a href="">Log in</a></li>
-                            <li><a href="">Host your home</a></li>
-                            <li><a href="">Host an experience</a></li>
-                            <li><a href="">Help</a></li>
-                        </ul>
-                        ------->
-                    </div>
+                        <div id="myDropdown" class="dropdown__content">
+                            <div class="user__box">
+                                <a href="">Sign up</a>
+                                <a href="">Log in</a>
+                                <a href="">Host your home</a>
+                                <a href="">Host an experience</a>
+                                <a href="">Help</a>
+                            </div>
+                        </div>
 
-                </div>
 
-            </header>
 
-            <div class="search__box">
-                <div class="searchbar">
-                    <div class="search__input">
-                        <label for="location">Location</label>
-                        <input type="text" class="location__input" placeholder="Where are you going?">
                     </div>
-                    <div class="search__input">
-                        <label for="checkinDate">Check in</label>
-                        <input type="date" class="date__input">
-                    </div>
-                    <div class="search__input">
-                        <label for="checkoutDate">Check out</label>
-                        <input type="date" class="date__input">
-                    </div>
-                    <div class="search__input without__border">
-                        <label for="guestsNumber">Guests</label>
-                        <input type="number" placeholder="Add guests" class="guests__input">
-                    </div>
-                    <a href="#" class="searchBtn"><i class="fas fa-search"></i></a>
-
                 </div>
             </div>
+            <div class="bottom__header">
+                <div class="search__box">
+                    <div class="searchbar">
+                        <div class="search__input">
+                            <label for="location">Location</label>
+                            <input type="text" class="location__input" placeholder="Where are you going?">
+                        </div>
+                        <div class="search__input">
+                            <label for="checkinDate">Check in</label>
+                            <input type="date" class="date__input">
+                        </div>
+                        <div class="search__input">
+                            <label for="checkoutDate">Check out</label>
+                            <input type="date" class="date__input">
+                        </div>
+                        <div class="search__input without__border">
+                            <label for="guestsNumber">Guests</label>
+                            <input type="number" placeholder="Add guests" class="guests__input">
+                        </div>
+                        <a href="#" class="searchBtn"><i class="fas fa-search"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <section id="home" class="showcase">
+
             <div class="showcase__slogan">
                 <h1>Go <br> Near</h1>
                 <a href="https://www.airbnb.co.uk/s/homes?location_search=NEARBY&search_type=HOMEPAGE_BANNER"
@@ -165,13 +172,12 @@
                         <p>interactive activies we can do together, led by one-of-a-kind hosts</p>
                 </div>
                 <a href="">Explore All </a>
-
             </div>
 
             <div class="experience__box">
                 <div class="experience1">
                     <img src="images/ex1.png" alt="">
-                    <p>Enjoy Santa stories with a children's book author</p>
+                    <p class="desc">Enjoy Santa stories with a children's book author</p>
                 </div>
                 <div class="experience2">
                     <img src="images/ex2.png" alt="">
