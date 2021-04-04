@@ -20,6 +20,7 @@ header {
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
     }
 
     .bottom__header {
@@ -27,6 +28,7 @@ header {
         display: flex;
         width: 100%;
         justify-content: center;
+        margin-top: 20px;
         
     }
 
@@ -35,6 +37,7 @@ header {
     a{
         text-decoration: none;
         color: white;
+
 
     }
 
@@ -45,6 +48,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
     a {
         margin: 0 20px;
@@ -77,6 +81,10 @@ header.sticky {
 
     .user {
         border: 1px solid rgba(0, 0, 0, 0.164);
+    }
+
+    .bottom__header{
+        display: none;
     }
 
 }
@@ -176,7 +184,7 @@ header.sticky {
 .search__box {
     display: flex;
     flex-direction: column;
-    max-width: 1500px;
+    max-width: 1300px;
     position: relative;
 
     .searchbar {
@@ -265,3 +273,102 @@ header.sticky {
 }
 
 
+@media (max-width: 1280px) {
+
+    header {
+        padding: 20px 130px;
+    }
+
+    .showcase {
+        padding: 20px 130px;
+    }
+
+    .search__type ul {
+        padding-left: 50px;
+    }
+
+
+}
+
+@media (max-width: 1170px) {
+
+    header {
+        padding: 20px 50px;
+    }
+
+    .showcase {
+        padding: 20px 50px;
+    }
+ 
+}
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 20px 20px;
+    }
+    header.sticky {
+        padding: 20px 20px;
+        display: flex;
+
+    }
+
+    .search__type ul {
+        padding-left: 0px;
+    }
+
+    .showcase__slogan {
+        padding-top: 300px;
+    }
+    .showcase__slogan h1 {
+        font-size: 6rem;
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+.showcase {
+    height: 60vh;
+}
+    header {
+        padding: 20px 20px;
+        display: none;
+    
+
+    }
+    header.sticky {
+        padding: 20px 20px;
+        display: none;
+
+
+
+    }
+
+    .search__type {
+        display: none;
+    }
+    .become__host {
+    display: none;
+    }
+
+    .search__box {
+        display: none;
+    }
+
+    .search__type ul {
+        padding-left: 0px;
+    }
+
+    .showcase__slogan {
+        padding-top: 200px;
+    }
+    .showcase__slogan h1 {
+        font-size: 4rem;
+        
+    }
+
+
+
+}

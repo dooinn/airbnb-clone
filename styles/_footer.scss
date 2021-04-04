@@ -34,3 +34,32 @@ footer {
 
     
 }
+
+@media (max-width: 1200px) {
+    footer {
+        padding: 30px 70px;
+        height: auto;
+    }
+
+    .icons {
+        display: flex;
+    }
+}
+
+@media(max-width: 800px) {
+    footer {
+        padding: 50px 50px;
+    }
+
+    .icons__terms {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        font-size: 0.8rem;
+        gap: 10px;
+    }
+
+    .icons {
+        display: flex;
+    }
+}

@@ -28,3 +28,16 @@
 
 }
 
+@media (max-width: 1200px) {
+    .other__infos {
+        padding: 30px 70px;
+        height: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .other__infos {
+        padding: 50px 50px;
+
+    }
+}
